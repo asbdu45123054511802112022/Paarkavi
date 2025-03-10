@@ -3,108 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supermarket Billing System</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Pizza Hut - Delicious Pizzas</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Supermarket Billing System</h1>
 
-        <!-- Product List -->
-        <div class="products">
-            <div class="product" data-name="Apple" data-price="20">
-                <p>Apple - ₹20</p>
-                <button onclick="addToCart('Apple', 20)">Add</button>
-            </div>
-            <div class="product" data-name="Milk" data-price="30">
-                <p>Milk - ₹30</p>
-                <button onclick="addToCart('Milk', 30)">Add</button>
-            </div>
-            <div class="product" data-name="Bread" data-price="40">
-                <p>Bread - ₹40</p>
-                <button onclick="addToCart('Bread', 40)">Add</button>
-            </div>
-        </div>
+    <header>
+        <h1>Welcome to Pizza Hut</h1>
+        <p>Delicious Pizzas, Fresh Ingredients!</p>
+    </header>
 
-        <!-- Shopping Cart -->
-        <div class="cart">
-            <h2>Cart</h2>
-            <ul id="cart-items"></ul>
-            <p>Total: $<span id="total">0</span></p>
-            <button onclick="checkout()">Checkout</button>
-        </div>
-    </div>
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <script src="script.js"></script>
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <ul>
+            <li>Pepperoni Pizza - $10.99</li>
+            <li>Cheese Pizza - $9.99</li>
+            <li>Veggie Pizza - $11.99</li>
+            <li>BBQ Chicken Pizza - $12.99</li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Pizza Hut is one of the best pizza chains in the world. We offer fresh, delicious pizzas made with love.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@pizzahut.com</p>
+        <p>Phone: +1 800-123-4567</p>
+        <p>Location: 123 Pizza Street, New York, USA</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Pizza Hut. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
-body {
-    font-family: Arial, sans-serif;
-    background-color: 
-    text-align: center;
-    margin: 20px;
-}
-
-.container {
-    background: white;
-    padding: 20px;
-    width: 50%;
-    margin: auto;
-    box-shadow: 0px 0px 10px gray;
-    border-radius: 8px;
-}
-
-h2 {
-    color: 
-}
-
-.billing-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-input {
-    padding: 8px;
-    margin: 5px;
-    width: 80%;
-    border: 1px solid 
-    border-radius: 4px;
-}
-
-button {
-    background: green;
-    color: white;
-    border: none;
-    padding: 10px;
-    width: 50%;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-button:hover {
-    background: darkgreen;
-}
-
-table {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
-}
-
-th, td {
-    border: 1px solid 
-    padding: 10px;
-    text-align: center;
-}
-
-th {
-    background: 
-    color: white;
-}
-
-h3 {
-    color: 
-    margin-top: 20px;
-}
